@@ -7,4 +7,4 @@ class User(models.Model):
     last_name = models.CharField(max_length=100)
 
     def __str__(self) -> str:
-        return self.name
+        return self.last_name
