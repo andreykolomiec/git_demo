@@ -15,3 +15,6 @@ class User(models.Model):
         if self.age < 18:
             return f"Hi, {self.name}"
         return f"Hello, {self.name}"
+
+    def say_hello(self) -> str:
+        return f"Hello, {self.name}. Yow are you?"
