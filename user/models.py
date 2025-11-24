@@ -8,3 +8,10 @@ class User(models.Model):
 
     def __str__(self) -> str:
         return self.last_name + " " + self.name
+
+    def say_hi(self) -> str:
+        # age < 18 Hi, self.name
+        # age > 18 Hi, self.name self.last_name
+        if self.age < 18:
+            return f"Hi, {self.name}"
+        return f"Hi, {self.name} {self.last_name}"
